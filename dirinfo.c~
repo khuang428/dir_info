@@ -25,7 +25,7 @@ int totalsize(DIR *str){
 }
 
 void main(){
-  DIR * stream = opendir(".");
+  DIR * stream = opendir("/");
   printf("Total Size: %d\n",totalsize(stream));
   ls(stream);
   closedir(stream);
